@@ -8,6 +8,7 @@ while(j<5)
 }
 
 let arr=[2,3,4,5,6,7,8,0]
+
 arr.forEach(function(element)
 {
     console.log(Math.pow(element,3))
@@ -65,24 +66,3 @@ arr.forEach(function(element,index,array)
     console.log(index,element,array)
 })
 
-//Scope 
-//let & const have block level scope
-let i=11;
-console.log(`outside ${i}`)
-function scope_test()
-{
-    let i=90;
-    console.log(`Inside ${i}`)
-}
-scope_test()
-
-//2.
-let j=11;
-console.log(`outside ${j}`)
-function scope_test2()
-{
-    let j=90;   //Error that it has been already declared
-
-    console.log(`Inside ${j}`)
-}
-scope_test2()
